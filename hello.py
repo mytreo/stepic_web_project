@@ -1,4 +1,4 @@
-def wsgi_application(environ, start_response):
+def app(environ, start_response):
 	resp = environ['QUERY_STRING'].split("&")
 	resp = [item+"\n" for item in resp]
 	status = '200 OK'
